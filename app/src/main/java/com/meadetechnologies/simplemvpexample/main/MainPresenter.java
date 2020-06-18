@@ -1,5 +1,7 @@
 package com.meadetechnologies.simplemvpexample.main;
 
+import android.view.View;
+
 /**
  * Responsible for handling actions from the View and updating the UI as required.
  */
@@ -12,12 +14,12 @@ public class MainPresenter implements MainContract.Presenter {
 
     ///// Presenter Methods ///////
     @Override
-    public void handleSignInButtonClick() {
+    public void handleSignInButtonClick(View view) {
         mvpView.showSignInScreen();
     }
 
     @Override
-    public void handleSignUpButtonClick() {
+    public void handleSignUpButtonClick(View view) {
         mvpView.showSignUpScreen();
     }
 }
