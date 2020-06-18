@@ -3,6 +3,7 @@ package com.meadetechnologies.simplemvpexample.main;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.meadetechnologies.simplemvpexample.R;
 
@@ -23,11 +24,11 @@ public class MainActivity extends AppCompatActivity implements MainContract.MvpV
     ////// MvpView Methods //////
     @Override
     public void showSignInScreen() {
-
+        Toast.makeText(this, "Taking user to the Sign in screen", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void showSignUpScreen() {
-
+        Toast.makeText(this, "Taking user to the Sign up screen", Toast.LENGTH_SHORT).show();
     }
 }
